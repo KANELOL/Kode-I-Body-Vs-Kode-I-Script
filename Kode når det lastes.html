@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="sjekkTid()">
+    <button onclick="sjekkTid()"></button>
+    <div id="a"></div>
+    <div id="b"></div>
+    <img src="https://apod.nasa.gov/apod/image/2003/BhShredder_NASA_1080.jpg" alt="Sort Hull Eller Noe.">
+    <script>
+        document.getElementById('a').innerHTML = 'Script ' + new Date().toTimeString();
+function sjekkTid() {
+    document.getElementById('b').innerHTML = 'I body ' + new Date().toTimeString();
+    
+}
+    </script>
+</body>
+</html>
